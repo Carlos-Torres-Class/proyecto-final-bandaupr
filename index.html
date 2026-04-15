@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    body {
+        margin: 0;
+    }
+
+    /* CONTAINER */
+    .container {
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    header h1 {
+        flex: 1;
+        text-align: center;
+        background-color: #ff0000;
+        color: #000000;
+        margin: 0;
+        font-size: 50px;
+    }
+
+    h2 {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 30px;
+        margin: 0;
+        padding: 10px 25px;
+    }
+
+    /* NAV BUTTONS */
+    .nav-btn {
+        display: inline-block;
+        margin: 20px 75px;
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: #ff0000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .nav-btn:hover {
+        background-color: #cc0000;
+    }
+
+    /* TITLE */
+    h3 { 
+        font-family: sans-serif;
+        text-align: center; 
+        font-size: 90px; 
+        margin: 0;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    /* LOGOS */
+    .logo {
+        width: 100px;
+        margin: 0 30px;
+    }
+
+    /* MAIN SECTION */
+    .main-section {
+        position: relative;
+        padding: 60px 0;
+    }
+
+    /* RED BARS */
+    .side-bar {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80px;
+        height: 250px;
+        background-color: red;
+    }
+
+    .side-bar.left {
+        left: 0;
+    }
+
+    .side-bar.right {
+        right: 0;
+    }
+
+    /* CONTENT */
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .main-img { 
+        width: 600px; 
+        border-radius: 10px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .rogelio {
+        width: 100px;
+    }
+
+    .social {
+        display: flex;
+        gap: 40px;
+    }
+
+    .social a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* ===== MOBILE VERSION ===== */
+    @media (max-width: 768px) {
+
+        .container {
+            width: 100%;
+        }
+
+        .content {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 45px;
+        }
+
+        .main-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-btn {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        .logo {
+            width: 60px;
+            margin: 10px;
+        }
+
+        .side-bar {
+            display: none;
+        }
+
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    </style>
+    <title>Banda UPR Ponce</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <img src="images/Siglas-UPR-Ponce-black.png" class="logo">
+        <h1>Banda UPR Ponce</h1>
+        <img src="images/ponce-sello.png" class="logo">
+    </header>
+
+    <h2>¡Únete a nuestra banda!</h2>
+
+    <a href="sobre.html" class="nav-btn">Sobre Nosotros</a>
+    <a href="beneficios.html" class="nav-btn">Beneficios</a>
+    <a href="Instrumentos.html" class="nav-btn">Instrumentos</a>
+    <a href="Requisitos.html" class="nav-btn">Requisitos</a>
+    <a href="Galeria.html" class="nav-btn">Galeria</a>
+
+    <main>
+        <div class="main-section">
+
+            <div class="side-bar left"></div>
+            <div class="side-bar right"></div>
+
+            <div class="content">
+                <h3>
+                    ¡ROJO Y <br>
+                    NEGRO<br>
+                    SIEMPRE!
+                </h3>
+
+                <img src="images/Banda-Fondo.jpeg" class="main-img">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="footer-content">
+            <img src="images/rogelio.png" class="rogelio">
+
+            <div class="social">
+                <p>Instagram: <a href="https://www.instagram.com/banda_uprponce/">banda_uprponce</a></p> 
+                <p>Facebook: <a href="https://www.facebook.com/BandaUPRPonce">BandaUPRPonce</a></p> 
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
